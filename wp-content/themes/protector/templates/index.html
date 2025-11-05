@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","theme":"protector"} /-->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"2rem","bottom":"4rem"}}},"backgroundColor":"background","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background-background-color has-background" style="padding-top:2rem;padding-bottom:4rem">
+
+    <!-- wp:woocommerce/product-filter-row {"lock":{"move":false,"remove":true}} -->
+    <div class="wp-block-woocommerce-product-filter-row">
+        <!-- wp:woocommerce/product-filter {"filterType":"price-filter"} /-->
+        <!-- wp:woocommerce/product-filter {"filterType":"attribute-filter","attributeId":1} /-->
+        <!-- wp:woocommerce/product-filter {"filterType":"stock-filter"} /-->
+    </div>
+    <!-- /wp:woocommerce/product-filter-row -->
+
+    <!-- wp:woocommerce/product-collection {"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":{},"parents":[]},"tagName":"div","displayLayout":{"type":"flex","columns":4},"namespace":"woocommerce/product-collection/all-products"} /-->
+
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"3rem"}}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group" style="margin-top:3rem">
+        <!-- wp:paragraph {"align":"center","style":{"color":{"background":"#e7f3ff"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"fontSize":"medium"} -->
+        <p class="has-text-align-center has-medium-font-size has-background" style="background-color:#e7f3ff;padding-top:1rem;padding-bottom:1rem">
+            <strong>Бесплатная доставка при заказе от 4000 грн</strong>
+        </p>
+        <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"protector"} /-->

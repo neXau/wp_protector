@@ -1,0 +1,73 @@
+/*
+Theme Name: protector
+Theme URI: https://example.com/protector
+Author: xAI Assistant
+Author URI: https://x.ai
+Description: Минималистичная блочная тема для магазина автомобильных дисков на WooCommerce. Gutenberg + FSE + WooCommerce Blocks. Светлый дизайн, акцент #0071E3, шрифт Inter.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: protector
+Tags: block-patterns, full-site-editing, woocommerce, e-commerce, minimal, responsive-layout
+Requires at least: 6.1
+Tested up to: 6.7
+Requires PHP: 7.4
+*/
+
+
+/* Адаптивная сетка */
+.wp-block-woocommerce-product-collection .wc-block-grid__products {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .wp-block-woocommerce-product-collection .wc-block-grid__products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .wp-block-woocommerce-product-collection .wc-block-grid__products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Карточка товара */
+.wc-block-grid__product {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.25s ease;
+}
+
+.wc-block-grid__product:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+}
+
+.wc-block-grid__product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.wc-block-grid__product-title {
+    font-weight: 600;
+    margin: 0.75rem 1rem 0.5rem;
+    font-size: 1rem;
+    color: #222;
+}
+
+.wc-block-grid__product-price {
+    margin: 0 1rem 1rem;
+    font-weight: 600;
+    color: #0071E3;
+}
+
+.wc-block-components-product-add-to-cart-button {
+    margin: 0 1rem 1rem;
+    width: calc(100% - 2rem);
+}

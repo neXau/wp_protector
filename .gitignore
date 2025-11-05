@@ -36,4 +36,4 @@ wp-config.php
 /.htaccess
 
 # Ignore Dev Plugins
-/wp-content/plugins/create-block-theme/
+# /wp-content/plugins/create-block-theme/
